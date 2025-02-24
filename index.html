@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luigi Vismara - Software Engineer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a202c;
+            color: #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .accent {
+            color: #00bfff;
+        }
+        .border-accent {
+            border-color: #00bfff;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+        }
+        main {
+            flex: 1;
+        }
+    </style>
+    <meta property="og:title" content="Luigi Vismara - Software Engineer">
+    <meta property="og:description" content="Software Engineer specializing in Java, MySQL, AWS, Redis, PostgreSQL, Kafka, architectures, and design patterns.">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/33238929?v=4">
+    <meta property="og:url" content="https://luigivismara.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Luigi Vismara - Software Engineer">
+    <meta name="twitter:description" content="Software Engineer specializing in Java, MySQL, AWS, Redis, PostgreSQL, Kafka, architectures, and design patterns.">
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/33238929?v=4">
+</head>
+<body class="font-sans leading-normal tracking-normal gradient-bg">
+    <header class="border-b-4 border-accent">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between p-6">
+            <div class="flex items-center">
+                <img class="h-16 w-16 rounded-full border-2 border-accent" src="https://avatars.githubusercontent.com/u/33238929?v=4" alt="Luigi Vismara">
+                <div class="ml-4">
+                    <h1 class="text-3xl font-bold accent">Luigi Vismara</h1>
+                    <p class="text-lg"><a href="https://siprocal.com" class="accent hover:underline">Software Engineer at Siprocal</a></p>
+                </div>
+            </div>
+            <div class="mt-4 md:mt-0">
+                <a href="https://www.linkedin.com/in/luigivismara/" class="text-lg accent hover:underline">LinkedIn</a>
+                <a href="https://github.com/luigivis" class="ml-4 text-lg accent hover:underline">GitHub</a>
+                <a href="mailto:luigivis98@gmail.com" class="ml-4 text-lg accent hover:underline">Email</a>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto p-6">
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-accent inline-block">About Me</h2>
+            <p class="text-lg">I am a software engineer with over 5 years of experience in designing and implementing scalable, high-performance systems. Skilled in backend development with expertise in technologies such as Java, Spring Boot, Kafka, and database management using MySQL and PostgreSQL. Experienced in cloud-based architectures with AWS services including Lambda, Step Functions, and EventBridge.</p>
+            <p class="text-lg mt-4">Previously, I contributed as a Java Developer at <a href="https://www.yappy.com.pa/" class="accent hover:underline">Yappy</a>, enhancing secure payment systems, and as a Backend Tech Leader at Autosys, where I led the development of an event-driven automotive management platform.</p>
+        </section>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-accent inline-block">Projects</h2>
+            <ul class="list-disc list-inside text-lg">
+                <li><a href="https://github.com/luigivis/real-time-notify-service" class="accent hover:underline">Real-Time Notify Service</a>: Microservice leveraging Kafka for real-time communication.</li>
+                <li><a href="https://github.com/luigivis/url-shortening-system" class="accent hover:underline">URL Shortening System</a>: RESTful API for shortening and managing URLs.</li>
+                <li><a href="https://github.com/luigivis/endpoint-registry" class="accent hover:underline">Endpoint Registry</a>: A library to document application endpoints automatically.</li>
+                <li><a href="https://github.com/luigivis/short-uuid" class="accent hover:underline">Short UUID</a>: Utility for generating concise UUIDs.</li>
+            </ul>
+        </section>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-accent inline-block">Maven Repository</h2>
+            <ul class="list-disc list-inside text-lg">
+                <li><a href="https://central.sonatype.com/artifact/com.luigivismara/endpoint-registry/1.0.0" class="accent hover:underline">Endpoint Registry (com.luigivismara:endpoint-registry:1.0.0)</a></li>
+                <li><a href="https://central.sonatype.com/artifact/com.luigivismara/short-uuid/1.0.0" class="accent hover:underline">Short UUID (com.luigivismara:short-uuid:1.0.0)</a></li>
+            </ul>
+        </section>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-accent inline-block">GitHub Activity</h2>
+            <div id="github-widget" class="border-2 border-accent p-4 rounded-lg"></div>
+        </section>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-accent inline-block">Technologies</h2>
+            <ul class="list-disc list-inside text-lg">
+                <li>Java, Spring Boot, Jakarta EE</li>
+                <li>MySQL, PostgreSQL, DynamoDB</li>
+                <li>Apache Kafka, Redis</li>
+                <li>Docker, AWS (Lambda, S3, SSM)</li>
+                <li>Prometheus, Grafana, OpenTelemetry</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="border-t-4 border-accent mt-8">
+        <div class="container mx-auto p-6 text-center">
+            <p>&copy; 2024 Luigi Vismara. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+    <script>
+        new GitHubCalendar("#github-widget", "luigivis", { responsive: true });
+    </script>
+</body>
+</html>
