@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,25 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luigi Vismara - Software Engineer</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="preload" as="image" href="https://avatars.githubusercontent.com/u/33238929?v=4">
     <style>
         body {
-            background-color: #1a202c;
-            color: #e2e8f0;
+            background-color: #0f172a;
+            color: #f1f5f9;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
         }
         .accent {
-            color: #00bfff;
+            color: #3b82f6;
         }
         .border-accent {
-            border-color: #00bfff;
+            border-color: #3b82f6;
+        }
+        .bg-accent {
+            background-color: #3b82f6;
+        }
+        .hover-accent:hover {
+            color: #60a5fa;
         }
         .gradient-bg {
-            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .card {
+            background: rgba(30, 41, 59, 0.7);
+            border-radius: 12px;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            will-change: transform, box-shadow;
+            transition: transform 0.3s, box-shadow 0.3s;
+            contain: layout style paint;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3);
+        }
+        @supports (backdrop-filter: blur(10px)) {
+            .card {
+                backdrop-filter: blur(10px);
+            }
         }
         main {
             flex: 1;
+        }
+        .section-heading {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #3b82f6, transparent);
+            border-radius: 3px;
+        }
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .content-visibility-auto {
+            content-visibility: auto;
+            contain-intrinsic-size: 1px 1000px;
         }
     </style>
     <meta property="og:title" content="Luigi Vismara - Software Engineer">
@@ -38,68 +101,261 @@
     <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/33238929?v=4">
 </head>
 <body class="font-sans leading-normal tracking-normal gradient-bg">
-    <header class="border-b-4 border-accent">
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between p-6">
+    <header class="py-6 border-b border-opacity-20 border-blue-400 bg-opacity-90 backdrop-filter backdrop-blur-sm sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
             <div class="flex items-center">
-                <img class="h-16 w-16 rounded-full border-2 border-accent" src="https://avatars.githubusercontent.com/u/33238929?v=4" alt="Luigi Vismara">
-                <div class="ml-4">
-                    <h1 class="text-3xl font-bold accent">Luigi Vismara</h1>
-                    <p class="text-lg"><a href="https://siprocal.com" class="accent hover:underline">Software Engineer at Siprocal</a></p>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-blue-500 rounded-full blur opacity-20"></div>
+                    <img class="h-20 w-20 rounded-full border-2 border-accent relative z-10 object-cover" src="https://avatars.githubusercontent.com/u/33238929?v=4" alt="Luigi Vismara" width="80" height="80" fetchpriority="high">
+                </div>
+                <div class="ml-5">
+                    <h1 class="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">Luigi Vismara</h1>
+                    <p class="text-lg text-blue-200"><a href="https://siprocal.com" class="hover-accent transition-colors duration-300">Software Engineer at Siprocal</a></p>
                 </div>
             </div>
-            <div class="mt-4 md:mt-0">
-                <a href="https://www.linkedin.com/in/luigivismara/" class="text-lg accent hover:underline">LinkedIn</a>
-                <a href="https://github.com/luigivis" class="ml-4 text-lg accent hover:underline">GitHub</a>
-                <a href="mailto:luigivis98@gmail.com" class="ml-4 text-lg accent hover:underline">Email</a>
-            </div>
+            <nav class="mt-6 md:mt-0">
+                <div class="flex space-x-6 items-center">
+                    <a href="https://www.linkedin.com/in/luigivismara/" class="nav-link text-lg flex items-center hover-accent"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a>
+                    <a href="https://github.com/luigivis" class="nav-link text-lg flex items-center hover-accent"><i class="fab fa-github mr-2"></i>GitHub</a>
+                    <a href="mailto:luigivis98@gmail.com" class="nav-link text-lg flex items-center hover-accent"><i class="far fa-envelope mr-2"></i>Email</a>
+                </div>
+            </nav>
         </div>
     </header>
-    <main class="container mx-auto p-6">
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-accent inline-block">About Me</h2>
-            <p class="text-lg">I am a software engineer with over 5 years of experience in designing and implementing scalable, high-performance systems. Skilled in backend development with expertise in technologies such as Java, Spring Boot, Kafka, and database management using MySQL and PostgreSQL. Experienced in cloud-based architectures with AWS services including Lambda, Step Functions, and EventBridge.</p>
-            <p class="text-lg mt-4">Previously, I contributed as a Java Developer at <a href="https://www.yappy.com.pa/" class="accent hover:underline">Yappy</a>, enhancing secure payment systems, and as a Backend Tech Leader at Autosys, where I led the development of an event-driven automotive management platform.</p>
+    <main class="container mx-auto px-6 py-12 max-w-6xl">
+        <!-- Hero Section -->
+        <section class="mb-16 text-center">
+            <h2 class="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">Software Engineer & Java Specialist</h2>
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto">Building scalable, high-performance systems with a focus on clean code and modern architectures.</p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="#projects" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105">View Projects</a>
+                <a href="mailto:luigivis98@gmail.com" class="px-6 py-3 border border-blue-500 text-blue-400 hover:bg-blue-500 hover:bg-opacity-10 font-medium rounded-lg transition-all duration-300">Contact Me</a>
+            </div>
         </section>
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-accent inline-block">Projects</h2>
-            <ul class="list-disc list-inside text-lg">
-                <li><a href="https://github.com/luigivis/real-time-notify-service" class="accent hover:underline">Real-Time Notify Service</a>: Microservice leveraging Kafka for real-time communication.</li>
-                <li><a href="https://github.com/luigivis/url-shortening-system" class="accent hover:underline">URL Shortening System</a>: RESTful API for shortening and managing URLs.</li>
-                <li><a href="https://github.com/luigivis/endpoint-registry" class="accent hover:underline">Endpoint Registry</a>: A library to document application endpoints automatically.</li>
-                <li><a href="https://github.com/luigivis/short-uuid" class="accent hover:underline">Short UUID</a>: Utility for generating concise UUIDs.</li>
-            </ul>
+
+        <!-- About Me Section -->
+        <section class="mb-16 content-visibility-auto">
+            <h2 class="text-2xl font-semibold section-heading text-blue-400">About Me</h2>
+            <div class="card p-8" data-scroll-reveal="fade-up">
+                <p class="text-lg leading-relaxed">I am a software engineer with over 5 years of experience in designing and implementing scalable, high-performance systems. Skilled in backend development with expertise in technologies such as Java, Spring Boot, Kafka, and database management using MySQL and PostgreSQL. Experienced in cloud-based architectures with AWS services including Lambda, Step Functions, and EventBridge.</p>
+                <p class="text-lg mt-4 leading-relaxed">Previously, I contributed as a Java Developer at <a href="https://www.yappy.com.pa/" class="text-blue-400 hover:text-blue-300 transition-colors">Yappy</a>, enhancing secure payment systems, and as a Backend Tech Leader at Autosys, where I led the development of an event-driven automotive management platform.</p>
+            </div>
         </section>
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-accent inline-block">Maven Repository</h2>
-            <ul class="list-disc list-inside text-lg">
-                <li><a href="https://central.sonatype.com/artifact/com.luigivismara/endpoint-registry/1.0.0" class="accent hover:underline">Endpoint Registry (com.luigivismara:endpoint-registry:1.0.0)</a></li>
-                <li><a href="https://central.sonatype.com/artifact/com.luigivismara/short-uuid/1.0.0" class="accent hover:underline">Short UUID (com.luigivismara:short-uuid:1.0.0)</a></li>
-            </ul>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-16 content-visibility-auto">
+            <h2 class="text-2xl font-semibold section-heading text-blue-400">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card p-6 hover:border-blue-400">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-bell text-blue-400 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-semibold"><a href="https://github.com/luigivis/real-time-notify-service" class="text-blue-400 hover:text-blue-300 transition-colors">Real-Time Notify Service</a></h3>
+                    </div>
+                    <p>Microservice leveraging Kafka for real-time communication, enabling instant notifications across distributed systems.</p>
+                    <div class="mt-4 flex items-center text-blue-300 text-sm">
+                        <span class="mr-4"><i class="fas fa-code mr-1"></i> Java</span>
+                        <span><i class="fas fa-server mr-1"></i> Kafka</span>
+                    </div>
+                </div>
+                <div class="card p-6 hover:border-blue-400">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-link text-blue-400 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-semibold"><a href="https://github.com/luigivis/url-shortening-system" class="text-blue-400 hover:text-blue-300 transition-colors">URL Shortening System</a></h3>
+                    </div>
+                    <p>RESTful API for shortening and managing URLs with analytics capabilities and custom alias support.</p>
+                    <div class="mt-4 flex items-center text-blue-300 text-sm">
+                        <span class="mr-4"><i class="fas fa-code mr-1"></i> Spring Boot</span>
+                        <span><i class="fas fa-database mr-1"></i> Redis</span>
+                    </div>
+                </div>
+                <div class="card p-6 hover:border-blue-400">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-book text-blue-400 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-semibold"><a href="https://github.com/luigivis/endpoint-registry" class="text-blue-400 hover:text-blue-300 transition-colors">Endpoint Registry</a></h3>
+                    </div>
+                    <p>A library to document application endpoints automatically, simplifying API documentation maintenance.</p>
+                    <div class="mt-4 flex items-center text-blue-300 text-sm">
+                        <span class="mr-4"><i class="fas fa-code mr-1"></i> Java</span>
+                        <span><i class="fas fa-cogs mr-1"></i> Spring</span>
+                    </div>
+                </div>
+                <div class="card p-6 hover:border-blue-400">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-fingerprint text-blue-400 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-semibold"><a href="https://github.com/luigivis/short-uuid" class="text-blue-400 hover:text-blue-300 transition-colors">Short UUID</a></h3>
+                    </div>
+                    <p>Utility for generating concise UUIDs, optimized for storage efficiency and URL-friendliness.</p>
+                    <div class="mt-4 flex items-center text-blue-300 text-sm">
+                        <span class="mr-4"><i class="fas fa-code mr-1"></i> Java</span>
+                        <span><i class="fas fa-cube mr-1"></i> Utility</span>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-accent inline-block">GitHub Activity</h2>
-            <div id="github-widget" class="border-2 border-accent p-4 rounded-lg"></div>
+
+        <!-- Maven Repository Section -->
+        <section class="mb-16 content-visibility-auto">
+            <h2 class="text-2xl font-semibold section-heading text-blue-400">Maven Repository</h2>
+            <div class="card p-8" data-scroll-reveal="fade-up">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-4 border border-blue-500 border-opacity-30 rounded-lg bg-blue-900 bg-opacity-20">
+                        <h3 class="text-xl font-medium mb-2 text-blue-300">Endpoint Registry</h3>
+                        <pre class="bg-gray-900 p-3 rounded text-sm overflow-x-auto">implementation 'com.luigivismara:endpoint-registry:1.0.0'</pre>
+                        <a href="https://central.sonatype.com/artifact/com.luigivismara/endpoint-registry/1.0.0" class="inline-block mt-3 text-blue-400 hover:text-blue-300 transition-colors">View on Maven Central <i class="fas fa-external-link-alt ml-1"></i></a>
+                    </div>
+                    <div class="p-4 border border-blue-500 border-opacity-30 rounded-lg bg-blue-900 bg-opacity-20">
+                        <h3 class="text-xl font-medium mb-2 text-blue-300">Short UUID</h3>
+                        <pre class="bg-gray-900 p-3 rounded text-sm overflow-x-auto">implementation 'com.luigivismara:short-uuid:1.0.0'</pre>
+                        <a href="https://central.sonatype.com/artifact/com.luigivismara/short-uuid/1.0.0" class="inline-block mt-3 text-blue-400 hover:text-blue-300 transition-colors">View on Maven Central <i class="fas fa-external-link-alt ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-accent inline-block">Technologies</h2>
-            <ul class="list-disc list-inside text-lg">
-                <li>Java, Spring Boot, Jakarta EE</li>
-                <li>MySQL, PostgreSQL, DynamoDB</li>
-                <li>Apache Kafka, Redis</li>
-                <li>Docker, AWS (Lambda, S3, SSM)</li>
-                <li>Prometheus, Grafana, OpenTelemetry</li>
-            </ul>
+
+        <!-- GitHub Activity Section -->
+        <section class="mb-16 content-visibility-auto">
+            <h2 class="text-2xl font-semibold section-heading text-blue-400">GitHub Activity</h2>
+            <div class="card p-6" data-scroll-reveal="fade-up">
+                <div id="github-widget" class="p-4 rounded-lg"></div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section class="mb-8 content-visibility-auto">
+            <h2 class="text-2xl font-semibold section-heading text-blue-400">Technologies</h2>
+            <div class="card p-8" data-scroll-reveal="fade-up">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="p-4 border border-blue-500 border-opacity-20 rounded-lg hover:border-opacity-50 transition-all duration-300">
+                        <h3 class="text-xl font-medium mb-3 flex items-center"><i class="fas fa-code text-blue-400 mr-2"></i> Languages</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Java</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Spring Boot</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Jakarta EE</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 border border-blue-500 border-opacity-20 rounded-lg hover:border-opacity-50 transition-all duration-300">
+                        <h3 class="text-xl font-medium mb-3 flex items-center"><i class="fas fa-database text-blue-400 mr-2"></i> Databases</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> MySQL</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> PostgreSQL</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> DynamoDB</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Redis</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 border border-blue-500 border-opacity-20 rounded-lg hover:border-opacity-50 transition-all duration-300">
+                        <h3 class="text-xl font-medium mb-3 flex items-center"><i class="fas fa-server text-blue-400 mr-2"></i> Infrastructure</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Apache Kafka</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Docker</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> AWS (Lambda, S3, SSM)</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Prometheus, Grafana</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer class="border-t-4 border-accent mt-8">
-        <div class="container mx-auto p-6 text-center">
-            <p>&copy; 2024 Luigi Vismara. All rights reserved.</p>
+    <footer class="border-t border-blue-800 mt-8 bg-gradient-to-b from-blue-900/10 to-blue-900/30">
+        <div class="container mx-auto py-12 px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-blue-300">Luigi Vismara</h3>
+                    <p class="text-blue-100">Software Engineer specializing in scalable backend systems and distributed architectures.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-blue-300">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#projects" class="text-blue-200 hover:text-blue-400 transition-colors">Projects</a></li>
+                        <li><a href="https://github.com/luigivis" class="text-blue-200 hover:text-blue-400 transition-colors">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/luigivismara/" class="text-blue-200 hover:text-blue-400 transition-colors">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-blue-300">Contact</h3>
+                    <p class="flex items-center mb-2"><i class="far fa-envelope text-blue-400 mr-2"></i> luigivis98@gmail.com</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://github.com/luigivis" class="text-2xl text-blue-300 hover:text-blue-400 transition-colors"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/luigivismara/" class="text-2xl text-blue-300 hover:text-blue-400 transition-colors"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-blue-800 text-center">
+                <p>&copy; 2025 Luigi Vismara. All rights reserved.</p>
+            </div>
         </div>
     </footer>
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
     <script>
-        new GitHubCalendar("#github-widget", "luigivis", { responsive: true });
+        const loadGitHubCalendar = () => {
+            if (document.querySelector('#github-widget') && !window.calendarLoaded) {
+                window.calendarLoaded = true;
+
+                const calendarScript = document.createElement('script');
+                calendarScript.src = 'https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js';
+                calendarScript.onload = () => {
+                    const calendarCSS = document.createElement('link');
+                    calendarCSS.rel = 'stylesheet';
+                    calendarCSS.href = 'https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css';
+                    document.head.appendChild(calendarCSS);
+
+                    setTimeout(() => {
+                        new GitHubCalendar("#github-widget", "luigivis", { responsive: true });
+
+                        const calendarStyles = document.createElement('style');
+                        calendarStyles.textContent = `
+                            .js-calendar-graph-svg text { fill: #93c5fd !important; }
+                            .contrib-column { color: #93c5fd !important; }
+                            .contrib-number { color: #dbeafe !important; }
+                            .text-muted { color: #93c5fd !important; }
+                        `;
+                        document.head.appendChild(calendarStyles);
+                    }, 100);
+                };
+                document.body.appendChild(calendarScript);
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const sr = ScrollReveal({
+                origin: 'bottom',
+                distance: '20px',
+                duration: 800,
+                delay: 0,
+                easing: 'cubic-bezier(0.5, 0, 0, 1)',
+                reset: false
+            });
+
+            sr.reveal('[data-scroll-reveal="fade-up"]', { interval: 100 });
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        loadGitHubCalendar();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            const githubSection = document.querySelector('#github-widget');
+            if (githubSection) {
+                observer.observe(githubSection);
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
     </script>
 </body>
 </html>
