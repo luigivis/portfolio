@@ -149,7 +149,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="card p-6 hover:border-blue-400">
                     <div class="flex items-center mb-4">
-                        <i class="fas fa-bell text-blue-400 text-2xl mr-3"></i>
+                        <i class="fas fa-envelope text-blue-400 text-2xl mr-3"></i>
                         <h3 class="text-xl font-semibold"><a href="https://github.com/luigivis/real-time-notify-service" class="text-blue-400 hover:text-blue-300 transition-colors">Real-Time Notify Service</a></h3>
                     </div>
                     <p>Microservice leveraging Kafka for real-time communication, enabling instant notifications across distributed systems.</p>
@@ -191,6 +191,17 @@
                         <span><i class="fas fa-cube mr-1"></i> Utility</span>
                     </div>
                 </div>
+                <div class="card p-6 hover:border-blue-400">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-bell text-blue-400 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-semibold"><a href="https://github.com/luigivis/expo-server-sdk-java" class="text-blue-400 hover:text-blue-300 transition-colors">Expo Notifications SDK Java</a></h3>
+                    </div>
+                    <p>Project to send expo push notifications from Java.</p>
+                    <div class="mt-4 flex items-center text-blue-300 text-sm">
+                        <span class="mr-4"><i class="fas fa-code mr-1"></i> Java</span>
+                        <span><i class="fas fa-bell mr-1"></i> Notifications</span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -208,6 +219,11 @@
                         <h3 class="text-xl font-medium mb-2 text-blue-300">Short UUID</h3>
                         <pre class="bg-gray-900 p-3 rounded text-sm overflow-x-auto">implementation 'com.luigivismara:short-uuid:1.0.0'</pre>
                         <a href="https://central.sonatype.com/artifact/com.luigivismara/short-uuid/1.0.0" class="inline-block mt-3 text-blue-400 hover:text-blue-300 transition-colors">View on Maven Central <i class="fas fa-external-link-alt ml-1"></i></a>
+                    </div>
+                    <div class="p-4 border border-blue-500 border-opacity-30 rounded-lg bg-blue-900 bg-opacity-20">
+                        <h3 class="text-xl font-medium mb-2 text-blue-300">Expo Java SDK</h3>
+                        <pre class="bg-gray-900 p-3 rounded text-sm overflow-x-auto">implementation 'com.luigivismara:expo-server-sdk-java:1.0.0'</pre>
+                        <a href="https://central.sonatype.com/artifact/com.luigivismara/expo-server-sdk-java" class="inline-block mt-3 text-blue-400 hover:text-blue-300 transition-colors">View on Maven Central <i class="fas fa-external-link-alt ml-1"></i></a>
                     </div>
                 </div>
             </div>
@@ -232,6 +248,7 @@
                             <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Java</li>
                             <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Spring Boot</li>
                             <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Jakarta EE</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Quarkus</li>
                         </ul>
                     </div>
                     <div class="p-4 border border-blue-500 border-opacity-20 rounded-lg hover:border-opacity-50 transition-all duration-300">
@@ -241,6 +258,7 @@
                             <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> PostgreSQL</li>
                             <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> DynamoDB</li>
                             <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Redis</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> SQLite</li>
                         </ul>
                     </div>
                     <div class="p-4 border border-blue-500 border-opacity-20 rounded-lg hover:border-opacity-50 transition-all duration-300">
@@ -248,8 +266,30 @@
                         <ul class="space-y-2">
                             <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Apache Kafka</li>
                             <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Docker</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Twilio</li>
                             <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> AWS (Lambda, S3, SSM)</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Prometheus, Grafana</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Jenkins</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Vault</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 border border-blue-500 border-opacity-20 rounded-lg hover:border-opacity-50 transition-all duration-300">
+                        <h3 class="text-xl font-medium mb-3 flex items-center"><i class="fas fa-chart-simple text-blue-400 mr-2"></i> Monitoring</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Grafana</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> OpenTelemetry</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Tempo</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Prometheus</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Loki</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 border border-blue-500 border-opacity-20 rounded-lg hover:border-opacity-50 transition-all duration-300">
+                        <h3 class="text-xl font-medium mb-3 flex items-center"><i class="fas fa-lock text-blue-400 mr-2"></i> Security</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Jwt</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Oauth2</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Encryption</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> SSL</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Cypher</li>
                         </ul>
                     </div>
                 </div>
