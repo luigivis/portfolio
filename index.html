@@ -3,375 +3,367 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luigi Vismara - Software Engineer</title>
-    <link rel="icon" href="https://avatars.githubusercontent.com/u/33238929?v=4.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <link rel="preload" as="image" href="https://avatars.githubusercontent.com/u/33238929?v=4">
-    <style>
-        body {
-            background-color: #0f172a;
-            color: #f1f5f9;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            font-family: 'Poppins', sans-serif;
-        }
-        .accent {
-            color: #3b82f6;
-        }
-        .border-accent {
-            border-color: #3b82f6;
-        }
-        .bg-accent {
-            background-color: #3b82f6;
-        }
-        .hover-accent:hover {
-            color: #60a5fa;
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-        }
-        .card {
-            background: rgba(30, 41, 59, 0.7);
-            border-radius: 12px;
-            border: 1px solid rgba(59, 130, 246, 0.2);
-            will-change: transform, box-shadow;
-            transition: transform 0.3s, box-shadow 0.3s;
-            contain: layout style paint;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3);
-        }
-        @supports (backdrop-filter: blur(10px)) {
-            .card {
-                backdrop-filter: blur(10px);
-            }
-        }
-        main {
-            flex: 1;
-        }
-        .section-heading {
-            position: relative;
-            display: inline-block;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-        }
-        .section-heading::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: linear-gradient(90deg, #3b82f6, transparent);
-            border-radius: 3px;
-        }
-        .nav-link {
-            position: relative;
-            transition: all 0.3s ease;
-        }
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: #3b82f6;
-            transition: width 0.3s ease;
-        }
-        .nav-link:hover::after {
-            width: 100%;
-        }
-        .content-visibility-auto {
-            content-visibility: auto;
-            contain-intrinsic-size: 1px 1000px;
-        }
-    </style>
-    <meta property="og:title" content="Luigi Vismara - Software Engineer">
-    <meta property="og:description" content="Software Engineer specializing in Java, MySQL, AWS, Redis, PostgreSQL, Kafka, architectures, and design patterns.">
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/33238929?v=4">
-    <meta property="og:url" content="https://luigivismara.com">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Luigi Vismara - Software Engineer">
-    <meta name="twitter:description" content="Software Engineer specializing in Java, MySQL, AWS, Redis, PostgreSQL, Kafka, architectures, and design patterns.">
+<title>Luigi Vismara - Solutions Architect & Software Engineer</title>
+    <meta property="og:title" content="Luigi Vismara - Solutions Architect & Software Engineer">
+    <meta name="twitter:title" content="Luigi Vismara - Solutions Architect & Software Engineer">
+    <meta name="twitter:description" content="Solutions Architect & Lead Backend Engineer specializing in Backend Python and Java Development and Technical Leadership.">
     <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/33238929?v=4">
 </head>
-<body class="font-sans leading-normal tracking-normal gradient-bg">
-    <header class="py-6 border-b border-opacity-20 border-blue-400 bg-opacity-90 backdrop-filter backdrop-blur-sm sticky top-0 z-50">
+<body class="font-sans leading-normal tracking-normal">
+    <header class="py-6 border-b border-neutral-800 bg-neutral-950/90 backdrop-filter backdrop-blur-sm sticky top-0 z-50">
         <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
             <div class="flex items-center">
-                <div class="relative">
-                    <div class="absolute inset-0 bg-blue-500 rounded-full blur opacity-20"></div>
-                    <img class="h-20 w-20 rounded-full border-2 border-accent relative z-10 object-cover" src="https://avatars.githubusercontent.com/u/33238929?v=4" alt="Luigi Vismara" width="80" height="80" fetchpriority="high">
-                </div>
-                <div class="ml-5">
-                    <h1 class="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">Luigi Vismara</h1>
-                    <p class="text-lg text-blue-200"><a href="https://siprocal.com" class="hover-accent transition-colors duration-300">Software Engineer at Siprocal</a></p>
+                <img class="h-16 w-16 rounded-full border border-neutral-700 object-cover" src="https://avatars.githubusercontent.com/u/33238929?v=4" alt="Luigi Vismara" width="64" height="64">
+                <div class="ml-4">
+                    <h1 class="text-2xl font-semibold text-white">Luigi Vismara</h1>
+                    <p class="text-sm text-neutral-400" data-i18n="subtitle">Solutions Architect & Lead Backend Engineer</p>
                 </div>
             </div>
-            <nav class="mt-6 md:mt-0">
+            <nav class="mt-4 md:mt-0">
                 <div class="flex space-x-6 items-center">
-                    <a href="https://www.linkedin.com/in/luigivismara/" class="nav-link text-lg flex items-center hover-accent"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a>
-                    <a href="https://github.com/luigivis" class="nav-link text-lg flex items-center hover-accent"><i class="fab fa-github mr-2"></i>GitHub</a>
-                    <a href="mailto:luigivis98@gmail.com" class="nav-link text-lg flex items-center hover-accent"><i class="far fa-envelope mr-2"></i>Email</a>
+                    <button id="langToggle" class="lang-btn text-white" onclick="toggleLanguage()">ES | EN</button>
+                    <a href="https://www.linkedin.com/in/luivismara/" class="nav-link text-sm flex items-center"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a>
+                    <a href="https://github.com/luigivis" class="nav-link text-sm flex items-center"><i class="fab fa-github mr-2"></i>GitHub</a>
+                    <a href="mailto:luigivis98@gmail.com" class="nav-link text-sm flex items-center"><i class="far fa-envelope mr-2"></i>Email</a>
                 </div>
             </nav>
         </div>
     </header>
     <main class="container mx-auto px-6 py-12 max-w-6xl">
-        <!-- Hero Section -->
         <section class="mb-16 text-center">
-            <h2 class="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">Software Engineer & Java Specialist</h2>
-            <p class="text-xl text-blue-100 max-w-3xl mx-auto">Building scalable, high-performance systems with a focus on clean code and modern architectures.</p>
-            <div class="mt-8 flex justify-center space-x-4">
-                <a href="#projects" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105">View Projects</a>
-                <a href="mailto:luigivis98@gmail.com" class="px-6 py-3 border border-blue-500 text-blue-400 hover:bg-blue-500 hover:bg-opacity-10 font-medium rounded-lg transition-all duration-300">Contact Me</a>
+            <h2 class="text-3xl font-medium mb-4 text-white" data-i18n="hero_title">Backend Systems & Architecture</h2>
+            <p class="text-neutral-400 max-w-2xl mx-auto" data-i18n="hero_desc">7+ years building scalable, high-performance solutions. Java, Python, Spring Boot, Kafka, AWS.</p>
+            <div class="mt-6 flex justify-center space-x-4">
+                <a href="#projects" class="px-5 py-2 bg-neutral-800 hover:bg-neutral-700 text-white text-sm rounded-md transition-colors" data-i18n="btn_projects">View Projects</a>
+                <a href="mailto:luigivis98@gmail.com" class="px-5 py-2 border border-neutral-700 text-neutral-300 hover:text-white text-sm rounded-md transition-colors" data-i18n="btn_contact">Contact</a>
             </div>
         </section>
 
-        <!-- About Me Section -->
-        <section class="mb-16 content-visibility-auto">
-            <h2 class="text-2xl font-semibold section-heading text-blue-400">About Me</h2>
-            <div class="card p-8" data-scroll-reveal="fade-up">
-                <p class="text-lg leading-relaxed">I am a software engineer with over 5 years of experience in designing and implementing scalable, high-performance systems. Skilled in backend development with expertise in technologies such as Java, Spring Boot, Kafka, and database management using MySQL and PostgreSQL. Experienced in cloud-based architectures with AWS services including Lambda, Step Functions, and EventBridge.</p>
-                <p class="text-lg mt-4 leading-relaxed">Previously, I contributed as a Java Developer at <a href="https://www.yappy.com.pa/" class="text-blue-400 hover:text-blue-300 transition-colors">Yappy</a>, enhancing secure payment systems, and as a Backend Tech Leader at Autosys, where I led the development of an event-driven automotive management platform.</p>
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold section-heading" data-i18n="about_title">About</h2>
+            <div class="card p-6">
+                <p class="text-neutral-300 leading-relaxed" id="aboutText">Information Systems Engineer with over 7 years of experience in software development, specializing in Backend Python and Java Development and Technical Leadership. Expert in event-driven and microservices architectures, with deep mastery of Spring Boot, Kafka and AWS.</p>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="mb-16 content-visibility-auto">
-            <h2 class="text-2xl font-semibold section-heading text-blue-400">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="card p-6 hover:border-blue-400">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-envelope text-blue-400 text-2xl mr-3"></i>
-                        <h3 class="text-xl font-semibold"><a href="https://github.com/luigivis/real-time-notify-service" class="text-blue-400 hover:text-blue-300 transition-colors">Real-Time Notify Service</a></h3>
+        <section id="projects" class="mb-16">
+            <h2 class="text-2xl font-semibold section-heading" data-i18n="projects_title">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="card p-6 hover:border-neutral-600">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-envelope text-neutral-400 text-xl mr-3"></i>
+                        <h3 class="text-base font-medium"><a href="https://github.com/luigivis/real-time-notify-service" class="text-white hover:text-neutral-300 transition-colors">Real-Time Notify Service</a></h3>
                     </div>
-                    <p>Microservice leveraging Kafka for real-time communication, enabling instant notifications across distributed systems.</p>
-                    <div class="mt-4 flex items-center text-blue-300 text-sm">
-                        <span class="mr-4"><i class="fas fa-code mr-1"></i> Java</span>
-                        <span><i class="fas fa-server mr-1"></i> Kafka</span>
-                    </div>
+                    <p class="text-neutral-400 text-sm" data-i18n="proj_notify">Microservice leveraging Kafka for real-time communication.</p>
                 </div>
-                <div class="card p-6 hover:border-blue-400">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-link text-blue-400 text-2xl mr-3"></i>
-                        <h3 class="text-xl font-semibold"><a href="https://github.com/luigivis/url-shortening-system" class="text-blue-400 hover:text-blue-300 transition-colors">URL Shortening System</a></h3>
+                <div class="card p-6 hover:border-neutral-600">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-link text-neutral-400 text-xl mr-3"></i>
+                        <h3 class="text-base font-medium"><a href="https://github.com/luigivis/url-shortening-system" class="text-white hover:text-neutral-300 transition-colors">URL Shortening System</a></h3>
                     </div>
-                    <p>RESTful API for shortening and managing URLs with analytics capabilities and custom alias support.</p>
-                    <div class="mt-4 flex items-center text-blue-300 text-sm">
-                        <span class="mr-4"><i class="fas fa-code mr-1"></i> Spring Boot</span>
-                        <span><i class="fas fa-database mr-1"></i> Redis</span>
-                    </div>
+                    <p class="text-neutral-400 text-sm" data-i18n="proj_url">RESTful API for shortening URLs with analytics.</p>
                 </div>
-                <div class="card p-6 hover:border-blue-400">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-book text-blue-400 text-2xl mr-3"></i>
-                        <h3 class="text-xl font-semibold"><a href="https://github.com/luigivis/endpoint-registry" class="text-blue-400 hover:text-blue-300 transition-colors">Endpoint Registry</a></h3>
+                <div class="card p-6 hover:border-neutral-600">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-book text-neutral-400 text-xl mr-3"></i>
+                        <h3 class="text-base font-medium"><a href="https://github.com/luigivis/endpoint-registry" class="text-white hover:text-neutral-300 transition-colors">Endpoint Registry</a></h3>
                     </div>
-                    <p>A library to document application endpoints automatically, simplifying API documentation maintenance.</p>
-                    <div class="mt-4 flex items-center text-blue-300 text-sm">
-                        <span class="mr-4"><i class="fas fa-code mr-1"></i> Java</span>
-                        <span><i class="fas fa-cogs mr-1"></i> Spring</span>
-                    </div>
+                    <p class="text-neutral-400 text-sm" data-i18n="proj_endpoint">Library to document application endpoints automatically.</p>
                 </div>
-                <div class="card p-6 hover:border-blue-400">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-fingerprint text-blue-400 text-2xl mr-3"></i>
-                        <h3 class="text-xl font-semibold"><a href="https://github.com/luigivis/short-uuid" class="text-blue-400 hover:text-blue-300 transition-colors">Short UUID</a></h3>
+                <div class="card p-6 hover:border-neutral-600">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-fingerprint text-neutral-400 text-xl mr-3"></i>
+                        <h3 class="text-base font-medium"><a href="https://github.com/luigivis/short-uuid" class="text-white hover:text-neutral-300 transition-colors">Short UUID</a></h3>
                     </div>
-                    <p>Utility for generating concise UUIDs, optimized for storage efficiency and URL-friendliness.</p>
-                    <div class="mt-4 flex items-center text-blue-300 text-sm">
-                        <span class="mr-4"><i class="fas fa-code mr-1"></i> Java</span>
-                        <span><i class="fas fa-cube mr-1"></i> Utility</span>
-                    </div>
+                    <p class="text-neutral-400 text-sm" data-i18n="proj_uuid">Utility for generating concise UUIDs.</p>
                 </div>
-                <div class="card p-6 hover:border-blue-400">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-bell text-blue-400 text-2xl mr-3"></i>
-                        <h3 class="text-xl font-semibold"><a href="https://github.com/luigivis/expo-server-sdk-java" class="text-blue-400 hover:text-blue-300 transition-colors">Expo Notifications SDK Java</a></h3>
+                <div class="card p-6 hover:border-neutral-600">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-bell text-neutral-400 text-xl mr-3"></i>
+                        <h3 class="text-base font-medium"><a href="https://github.com/luigivis/expo-server-sdk-java" class="text-white hover:text-neutral-300 transition-colors">Expo Notifications SDK Java</a></h3>
                     </div>
-                    <p>Project to send expo push notifications from Java.</p>
-                    <div class="mt-4 flex items-center text-blue-300 text-sm">
-                        <span class="mr-4"><i class="fas fa-code mr-1"></i> Java</span>
-                        <span><i class="fas fa-bell mr-1"></i> Notifications</span>
-                    </div>
+                    <p class="text-neutral-400 text-sm" data-i18n="proj_expo">Send expo push notifications from Java.</p>
                 </div>
-                <div class="card p-6 hover:border-blue-400">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-heartbeat text-blue-400 text-2xl mr-3"></i>
-                        <h3 class="text-xl font-semibold"><a href="https://health.luigivis.com" class="text-blue-400 hover:text-blue-300 transition-colors">Health Tools</a></h3>
+                <div class="card p-6 hover:border-neutral-600">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-heartbeat text-neutral-400 text-xl mr-3"></i>
+                        <h3 class="text-base font-medium"><a href="https://health.luigivis.com" class="text-white hover:text-neutral-300 transition-colors">Health Tools</a></h3>
                     </div>
-                    <p>Collection of health monitoring tools and utilities for tracking wellness metrics.</p>
-                    <div class="mt-4 flex items-center text-blue-300 text-sm">
-                        <span class="mr-4"><i class="fas fa-link mr-1"></i> health.luigivis.com</span>
-                    </div>
+                    <p class="text-neutral-400 text-sm" data-i18n="proj_health">Collection of health monitoring tools.</p>
                 </div>
-                <div class="card p-6 hover:border-blue-400">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-terminal text-blue-400 text-2xl mr-3"></i>
-                        <h3 class="text-xl font-semibold"><a href="https://github.com/luigivis/opencode-remote-ctrl" class="text-blue-400 hover:text-blue-300 transition-colors">OpenCode Remote Ctrl</a></h3>
+                <div class="card p-6 hover:border-neutral-600 clickable-card" onclick="openModal('opencode-plugins')">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-terminal text-neutral-400 text-xl mr-3"></i>
+                        <h3 class="text-base font-medium text-white">OpenCode Plugins</h3>
                     </div>
-                    <p>Remote control utilities for OpenCode enabling seamless server management and automation.</p>
-                    <div class="mt-4 flex items-center text-blue-300 text-sm">
-                        <span class="mr-4"><i class="fas fa-code mr-1"></i> Scripts</span>
-                        <span><i class="fas fa-server mr-1"></i> Remote</span>
-                    </div>
-                </div>
-                <div class="card p-6 hover:border-blue-400">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-plug text-blue-400 text-2xl mr-3"></i>
-                        <h3 class="text-xl font-semibold"><a href="https://github.com/luigivis/opencode-luigi-connect" class="text-blue-400 hover:text-blue-300 transition-colors">OpenCode Luigi Connect</a></h3>
-                    </div>
-                    <p>OpenCode integration module for Luigi Connect enabling enhanced connectivity features.</p>
-                    <div class="mt-4 flex items-center text-blue-300 text-sm">
-                        <span class="mr-4"><i class="fas fa-code mr-1"></i> Integration</span>
-                        <span><i class="fas fa-plug mr-1"></i> Connect</span>
-                    </div>
-                </div>
-                <div class="card p-6 hover:border-blue-400">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-desktop text-blue-400 text-2xl mr-3"></i>
-                        <h3 class="text-xl font-semibold"><a href="https://github.com/luigivis/hyprland-scripts" class="text-blue-400 hover:text-blue-300 transition-colors">Hyprland Scripts</a></h3>
-                    </div>
-                    <p>Custom scripts and configurations for Hyprland wayland compositor.</p>
-                    <div class="mt-4 flex items-center text-blue-300 text-sm">
-                        <span class="mr-4"><i class="fas fa-code mr-1"></i> Hyprland</span>
-                        <span><i class="fas fa-terminal mr-1"></i> Scripts</span>
+                    <p class="text-neutral-400 text-sm mb-3" data-i18n="proj_opencode_desc">Collection of OpenCode extensions and integrations.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-neutral-800 rounded text-neutral-300 text-xs">Remote Ctrl</span>
+                        <span class="px-3 py-1 bg-neutral-800 rounded text-neutral-300 text-xs">Luigi Connect</span>
+                        <span class="px-3 py-1 bg-neutral-800 rounded text-neutral-300 text-xs">Hyprland Scripts</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Maven Repository Section -->
-        <section class="mb-16 content-visibility-auto">
-            <h2 class="text-2xl font-semibold section-heading text-blue-400">Maven Repository</h2>
-            <div class="card p-8" data-scroll-reveal="fade-up">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="p-4 border border-blue-500 border-opacity-30 rounded-lg bg-blue-900 bg-opacity-20">
-                        <h3 class="text-xl font-medium mb-2 text-blue-300">Endpoint Registry</h3>
-                        <pre class="bg-gray-900 p-3 rounded text-sm overflow-x-auto">implementation 'com.luigivismara:endpoint-registry:1.0.0'</pre>
-                        <a href="https://central.sonatype.com/artifact/com.luigivismara/endpoint-registry/1.0.0" class="inline-block mt-3 text-blue-400 hover:text-blue-300 transition-colors">View on Maven Central <i class="fas fa-external-link-alt ml-1"></i></a>
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold section-heading" data-i18n="maven_title">Maven Repository</h2>
+            <div class="card p-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="p-4 border border-neutral-700 rounded-lg">
+                        <h3 class="text-base font-medium mb-2 text-white">Endpoint Registry</h3>
+                        <pre class="bg-neutral-900 p-3 rounded text-sm text-neutral-300 overflow-x-auto whitespace-pre-wrap">implementation 'com.luigivismara:endpoint-registry:1.0.0'</pre>
+                        <a href="https://central.sonatype.com/artifact/com.luigivismara/endpoint-registry/1.0.0" class="inline-block mt-3 text-neutral-300 hover:text-white transition-colors">View on Maven Central →</a>
                     </div>
-                    <div class="p-4 border border-blue-500 border-opacity-30 rounded-lg bg-blue-900 bg-opacity-20">
-                        <h3 class="text-xl font-medium mb-2 text-blue-300">Short UUID</h3>
-                        <pre class="bg-gray-900 p-3 rounded text-sm overflow-x-auto">implementation 'com.luigivismara:short-uuid:1.0.0'</pre>
-                        <a href="https://central.sonatype.com/artifact/com.luigivismara/short-uuid/1.0.0" class="inline-block mt-3 text-blue-400 hover:text-blue-300 transition-colors">View on Maven Central <i class="fas fa-external-link-alt ml-1"></i></a>
+                    <div class="p-4 border border-neutral-700 rounded-lg">
+                        <h3 class="text-base font-medium mb-2 text-white">Short UUID</h3>
+                        <pre class="bg-neutral-900 p-3 rounded text-sm text-neutral-300 overflow-x-auto whitespace-pre-wrap">implementation 'com.luigivismara:short-uuid:1.0.0'</pre>
+                        <a href="https://central.sonatype.com/artifact/com.luigivismara/short-uuid/1.0.0" class="inline-block mt-3 text-neutral-300 hover:text-white transition-colors">View on Maven Central →</a>
                     </div>
-                    <div class="p-4 border border-blue-500 border-opacity-30 rounded-lg bg-blue-900 bg-opacity-20">
-                        <h3 class="text-xl font-medium mb-2 text-blue-300">Expo Java SDK</h3>
-                        <pre class="bg-gray-900 p-3 rounded text-sm overflow-x-auto">implementation 'com.luigivismara:expo-server-sdk-java:1.0.0'</pre>
-                        <a href="https://central.sonatype.com/artifact/com.luigivismara/expo-server-sdk-java" class="inline-block mt-3 text-blue-400 hover:text-blue-300 transition-colors">View on Maven Central <i class="fas fa-external-link-alt ml-1"></i></a>
+                    <div class="p-4 border border-neutral-700 rounded-lg">
+                        <h3 class="text-base font-medium mb-2 text-white">Expo Java SDK</h3>
+                        <pre class="bg-neutral-900 p-3 rounded text-sm text-neutral-300 overflow-x-auto whitespace-pre-wrap">implementation 'com.luigivismara:expo-server-sdk-java:1.0.0'</pre>
+                        <a href="https://central.sonatype.com/artifact/com.luigivismara/expo-server-sdk-java" class="inline-block mt-3 text-neutral-300 hover:text-white transition-colors">View on Maven Central →</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- GitHub Activity Section -->
-        <section class="mb-16 content-visibility-auto">
-            <h2 class="text-2xl font-semibold section-heading text-blue-400">GitHub Activity</h2>
-            <div class="card p-6" data-scroll-reveal="fade-up">
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold section-heading" data-i18n="npm_title">NPM Packages</h2>
+            <div class="card p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 border border-neutral-700 rounded-lg">
+                        <h3 class="text-base font-medium mb-2 text-white">opencode-luigi-connect</h3>
+                        <pre class="bg-neutral-900 p-3 rounded text-sm text-neutral-300 overflow-x-auto whitespace-pre-wrap">npm install opencode-luigi-connect</pre>
+                        <a href="https://www.npmjs.com/package/opencode-luigi-connect" class="inline-block mt-3 text-neutral-300 hover:text-white transition-colors">View on NPM →</a>
+                    </div>
+                    <div class="p-4 border border-neutral-700 rounded-lg">
+                        <h3 class="text-base font-medium mb-2 text-white">opencode-remote-ctrl</h3>
+                        <pre class="bg-neutral-900 p-3 rounded text-sm text-neutral-300 overflow-x-auto whitespace-pre-wrap">npm install opencode-remote-ctrl</pre>
+                        <a href="https://www.npmjs.com/package/opencode-remote-ctrl" class="inline-block mt-3 text-neutral-300 hover:text-white transition-colors">View on NPM →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold section-heading">GitHub Activity</h2>
+            <div class="card p-6">
                 <div id="github-widget" class="p-4 rounded-lg"></div>
             </div>
         </section>
 
-        <!-- Technologies Section -->
-        <section class="mb-8 content-visibility-auto">
-            <h2 class="text-2xl font-semibold section-heading text-blue-400">Technologies</h2>
-            <div class="card p-8" data-scroll-reveal="fade-up">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="p-4 border border-blue-500 border-opacity-20 rounded-lg hover:border-opacity-50 transition-all duration-300">
-                        <h3 class="text-xl font-medium mb-3 flex items-center"><i class="fas fa-code text-blue-400 mr-2"></i> Languages</h3>
-                        <ul class="space-y-2">
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Java</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Spring Boot</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Jakarta EE</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Quarkus</li>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold section-heading" data-i18n="tech_title">Technologies</h2>
+            <div class="card p-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="p-4 border border-neutral-700 rounded-lg">
+                        <h3 class="text-base font-medium mb-3 flex items-center text-white"><i class="fas fa-code mr-2"></i> <span data-i18n="tech_languages">Languages</span></h3>
+                        <ul class="space-y-1 text-sm text-neutral-300">
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>JavaScript / TypeScript</li>
                         </ul>
                     </div>
-                    <div class="p-4 border border-blue-500 border-opacity-20 rounded-lg hover:border-opacity-50 transition-all duration-300">
-                        <h3 class="text-xl font-medium mb-3 flex items-center"><i class="fas fa-database text-blue-400 mr-2"></i> Databases</h3>
-                        <ul class="space-y-2">
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> MySQL</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> PostgreSQL</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> DynamoDB</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Redis</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> SQLite</li>
+                    <div class="p-4 border border-neutral-700 rounded-lg">
+                        <h3 class="text-base font-medium mb-3 flex items-center text-white"><i class="fas fa-cubes mr-2"></i> <span data-i18n="tech_frameworks">Frameworks</span></h3>
+                        <ul class="space-y-1 text-sm text-neutral-300">
+                            <li>Spring Boot</li>
+                            <li>FastApi / Django</li>
+                            <li>Spring Security / JPA</li>
+                            <li>Jakarta EE</li>
                         </ul>
                     </div>
-                    <div class="p-4 border border-blue-500 border-opacity-20 rounded-lg hover:border-opacity-50 transition-all duration-300">
-                        <h3 class="text-xl font-medium mb-3 flex items-center"><i class="fas fa-server text-blue-400 mr-2"></i> Infrastructure</h3>
-                        <ul class="space-y-2">
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Apache Kafka</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Docker</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Twilio</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> AWS (Lambda, S3, SSM)</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Jenkins</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Vault</li>
+                    <div class="p-4 border border-neutral-700 rounded-lg">
+                        <h3 class="text-base font-medium mb-3 flex items-center text-white"><i class="fas fa-database mr-2"></i> <span data-i18n="tech_databases">Databases</span></h3>
+                        <ul class="space-y-1 text-sm text-neutral-300">
+                            <li>PostgreSQL / MySQL</li>
+                            <li>DynamoDB / Redis</li>
+                            <li>MongoDB / Neo4j</li>
+                            <li>AWS Athena</li>
                         </ul>
                     </div>
-                    <div class="p-4 border border-blue-500 border-opacity-20 rounded-lg hover:border-opacity-50 transition-all duration-300">
-                        <h3 class="text-xl font-medium mb-3 flex items-center"><i class="fas fa-chart-simple text-blue-400 mr-2"></i> Monitoring</h3>
-                        <ul class="space-y-2">
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Grafana</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> OpenTelemetry</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Tempo</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Prometheus</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Loki</li>
+                    <div class="p-4 border border-neutral-700 rounded-lg">
+                        <h3 class="text-base font-medium mb-3 flex items-center text-white"><i class="fas fa-cloud mr-2"></i> <span>Cloud & DevOps</span></h3>
+                        <ul class="space-y-1 text-sm text-neutral-300">
+                            <li>AWS / Docker / K8s</li>
+                            <li>Jenkins / GitHub Actions</li>
+                            <li>CircleCI / Linux</li>
                         </ul>
                     </div>
-                    <div class="p-4 border border-blue-500 border-opacity-20 rounded-lg hover:border-opacity-50 transition-all duration-300">
-                        <h3 class="text-xl font-medium mb-3 flex items-center"><i class="fas fa-lock text-blue-400 mr-2"></i> Security</h3>
-                        <ul class="space-y-2">
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Jwt</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Oauth2</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Encryption</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> SSL</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Cypher</li>
+                    <div class="p-4 border border-neutral-700 rounded-lg">
+                        <h3 class="text-base font-medium mb-3 flex items-center text-white"><i class="fas fa-server mr-2"></i> <span data-i18n="tech_architecture">Architecture</span></h3>
+                        <ul class="space-y-1 text-sm text-neutral-300">
+                            <li>Microservices</li>
+                            <li>Event-Driven (Kafka)</li>
+                            <li>SSE / WebSockets</li>
+                            <li>Design Patterns</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 border border-neutral-700 rounded-lg">
+                        <h3 class="text-base font-medium mb-3 flex items-center text-white"><i class="fas fa-chart-line mr-2"></i> <span>Observability</span></h3>
+                        <ul class="space-y-1 text-sm text-neutral-300">
+                            <li>Grafana / Prometheus</li>
+                            <li>OpenTelemetry</li>
+                            <li>Tempo / Zipkin</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 border border-neutral-700 rounded-lg">
+                        <h3 class="text-base font-medium mb-3 flex items-center text-white"><i class="fas fa-shield-halved mr-2"></i> <span>Security</span></h3>
+                        <ul class="space-y-1 text-sm text-neutral-300">
+                            <li>JWT / OAuth2</li>
+                            <li>Encryption / SSL</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="border-t border-blue-800 mt-8 bg-gradient-to-b from-blue-900/10 to-blue-900/30">
+    <footer class="border-t border-neutral-800 mt-8 bg-neutral-950">
         <div class="container mx-auto py-12 px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-xl font-semibold mb-4 text-blue-300">Luigi Vismara</h3>
-                    <p class="text-blue-100">Software Engineer specializing in scalable backend systems and distributed architectures.</p>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Luigi Vismara</h3>
+                    <p class="text-neutral-400" data-i18n="subtitle">Solutions Architect & Lead Backend Engineer</p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold mb-4 text-blue-300">Quick Links</h3>
+                    <h3 class="text-xl font-semibold mb-4 text-white" data-i18n="footer_links">Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="#projects" class="text-blue-200 hover:text-blue-400 transition-colors">Projects</a></li>
-                        <li><a href="https://github.com/luigivis" class="text-blue-200 hover:text-blue-400 transition-colors">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/luigivismara/" class="text-blue-200 hover:text-blue-400 transition-colors">LinkedIn</a></li>
+                        <li><a href="#projects" class="text-neutral-300 hover:text-white transition-colors" data-i18n="nav_projects">Projects</a></li>
+                        <li><a href="https://github.com/luigivis" class="text-neutral-300 hover:text-white transition-colors">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/luivismara/" class="text-neutral-300 hover:text-white transition-colors">LinkedIn</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold mb-4 text-blue-300">Contact</h3>
-                    <p class="flex items-center mb-2"><i class="far fa-envelope text-blue-400 mr-2"></i> luigivis98@gmail.com</p>
+                    <h3 class="text-xl font-semibold mb-4 text-white" data-i18n="footer_contact">Contact</h3>
+                    <p class="flex items-center mb-2 text-neutral-300"><i class="fas fa-envelope mr-2"></i> luigivis98@gmail.com</p>
                     <div class="flex space-x-4 mt-4">
-                        <a href="https://github.com/luigivis" class="text-2xl text-blue-300 hover:text-blue-400 transition-colors"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/luigivismara/" class="text-2xl text-blue-300 hover:text-blue-400 transition-colors"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/luigivis" class="text-xl text-neutral-300 hover:text-white transition-colors"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/luivismara/" class="text-xl text-neutral-300 hover:text-white transition-colors"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="mt-8 pt-8 border-t border-blue-800 text-center">
-                <p>&copy; 2025 Luigi Vismara. All rights reserved.</p>
+            <div class="mt-8 pt-8 border-t border-neutral-800 text-center">
+                <p class="text-neutral-500">&copy; 2025 Luigi Vismara</p>
             </div>
         </div>
     </footer>
 
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
     <script>
-        const loadGitHubCalendar = () => {
+const translations = {
+            en: {
+                subtitle: "Solutions Architect & Lead Backend Engineer",
+                hero_title: "Backend Systems & Architecture",
+                hero_desc: "7+ years building scalable, high-performance solutions. Java, Python, Spring Boot, Kafka, AWS.",
+                btn_projects: "View Projects",
+                btn_contact: "Contact",
+                about_title: "About",
+                about_text: "Information Systems Engineer with over 7 years of experience in software development, specializing in Backend Python and Java Development and Technical Leadership. Expert in event-driven and microservices architectures, with deep mastery of Spring Boot, Kafka and AWS.",
+                projects_title: "Projects",
+                proj_notify: "Microservice leveraging Kafka for real-time communication.",
+                proj_url: "RESTful API for shortening URLs with analytics.",
+                proj_endpoint: "Library to document application endpoints automatically.",
+                proj_uuid: "Utility for generating concise UUIDs.",
+                proj_expo: "Send expo push notifications from Java.",
+                proj_health: "Collection of health monitoring tools.",
+                proj_opencode_desc: "Collection of OpenCode extensions and integrations.",
+                maven_title: "Maven Repository",
+                npm_title: "NPM Packages",
+                tech_title: "Technologies",
+                tech_languages: "Languages",
+                tech_frameworks: "Frameworks",
+                tech_databases: "Databases",
+                tech_architecture: "Architecture",
+                footer_links: "Links",
+                footer_contact: "Contact",
+                nav_projects: "Projects"
+            },
+            es: {
+                subtitle: "Solutions Architect & Lead Backend Engineer",
+                hero_title: "Sistemas Backend y Arquitectura",
+                hero_desc: "+7 años construyendo soluciones escalables y de alto rendimiento. Java, Python, Spring Boot, Kafka, AWS.",
+                btn_projects: "Ver Proyectos",
+                btn_contact: "Contacto",
+                about_title: "Sobre Mí",
+                about_text: "Ingeniero de Sistemas con más de 7 años de experiencia en desarrollo de software, especializándome en Desarrollo Backend con Python y Java y Liderazgo Técnico. Experto en arquitecturas event-driven y microservicios, con dominio profundo de Spring Boot, Kafka y AWS.",
+                projects_title: "Proyectos",
+                proj_notify: "Microservicio usando Kafka para comunicación en tiempo real.",
+                proj_url: "API REST para acortar URLs con analíticas.",
+                proj_endpoint: "Librería para documentar endpoints de aplicaciones automáticamente.",
+                proj_uuid: "Utilidad para generar UUIDs concisos.",
+                proj_expo: "Enviar notificaciones push de Expo desde Java.",
+                proj_health: "Colección de herramientas de monitoreo de salud.",
+                proj_opencode_desc: "Colección de extensiones e integraciones de OpenCode.",
+                maven_title: "Repositorio Maven",
+                npm_title: "Paquetes NPM",
+                tech_title: "Tecnologías",
+                tech_languages: "Lenguajes",
+                tech_frameworks: "Frameworks",
+                tech_databases: "Bases de Datos",
+                tech_architecture: "Arquitectura",
+                footer_links: "Enlaces",
+                footer_contact: "Contacto",
+                nav_projects: "Proyectos"
+            }
+        };
+
+        let currentLang = 'en';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'es' : 'en';
+            document.documentElement.lang = currentLang;
+            document.getElementById('langToggle').textContent = currentLang === 'en' ? 'ES | EN' : 'EN | ES';
+            
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[currentLang][key]) {
+                    el.textContent = translations[currentLang][key];
+                }
+            });
+
+            const aboutEl = document.getElementById('aboutText');
+            if (aboutEl) {
+                aboutEl.textContent = translations[currentLang].about_text;
+            }
+
+            localStorage.setItem('lang', currentLang);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('lang');
+            if (savedLang) {
+                currentLang = savedLang;
+            }
+            document.documentElement.lang = currentLang;
+            document.getElementById('langToggle').textContent = currentLang === 'en' ? 'ES | EN' : 'EN | ES';
+            
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[currentLang][key]) {
+                    el.textContent = translations[currentLang][key];
+                }
+            });
+
+            const aboutEl = document.getElementById('aboutText');
+            if (aboutEl) {
+                aboutEl.textContent = translations[currentLang].about_text;
+            }
+
+            loadGitHubCalendar();
+
+            ScrollReveal().reveal('.card', { distance: '20px', duration: 800, delay: 0, easing: 'cubic-bezier(0.5, 0, 0, 1)', reset: false });
+        });
+
+        function loadGitHubCalendar() {
             if (document.querySelector('#github-widget') && !window.calendarLoaded) {
                 window.calendarLoaded = true;
 
@@ -388,57 +380,84 @@
 
                         const calendarStyles = document.createElement('style');
                         calendarStyles.textContent = `
-                            .js-calendar-graph-svg text { fill: #93c5fd !important; }
-                            .contrib-column { color: #93c5fd !important; }
-                            .contrib-number { color: #dbeafe !important; }
-                            .text-muted { color: #93c5fd !important; }
+                            .js-calendar-graph-svg text { fill: #9ca3af !important; }
+                            .contrib-column { color: #9ca3af !important; }
+                            .contrib-number { color: #d1d5db !important; }
+                            .text-muted { color: #9ca3af !important; }
                         `;
                         document.head.appendChild(calendarStyles);
                     }, 100);
                 };
                 document.body.appendChild(calendarScript);
             }
+        }
+
+        const projectData = {
+            'opencode-plugins': {
+                title: 'OpenCode Plugins',
+                title_es: 'Plugins de OpenCode',
+                description: 'Collection of OpenCode extensions and integrations.',
+                description_es: 'Colección de extensiones e integraciones de OpenCode.',
+                plugins: [
+                    { 
+                        name: 'opencode-remote-ctrl', 
+                        desc: 'CLI tool to manage opencode web as a background service with web UI and Tailscale integration.', 
+                        desc_es: 'CLI para gestionar opencode web como servicio con interfaz web e integración con Tailscale.',
+                        url: 'https://github.com/luigivis/opencode-remote-ctrl' 
+                    },
+                    { 
+                        name: 'opencode-luigi-connect', 
+                        desc: 'CLI tool to configure api.chat.luigivis.com as OpenCode provider.', 
+                        desc_es: 'CLI para configurar api.chat.luigivis.com como proveedor de OpenCode.', 
+                        url: 'https://github.com/luigivis/opencode-luigi-connect' 
+                    },
+                    { 
+                        name: 'hyprland-scripts', 
+                        desc: 'Custom scripts and configurations for Hyprland wayland compositor.', 
+                        desc_es: 'Scripts y configuraciones personalizados para el compositor wayland Hyprland.', 
+                        url: 'https://github.com/luigivis/hyprland-scripts' 
+                    }
+                ]
+            }
         };
 
-        document.addEventListener('DOMContentLoaded', function() {
-            const sr = ScrollReveal({
-                origin: 'bottom',
-                distance: '20px',
-                duration: 800,
-                delay: 0,
-                easing: 'cubic-bezier(0.5, 0, 0, 1)',
-                reset: false
-            });
+        function openModal(projectId) {
+            const project = projectData[projectId];
+            if (!project) return;
 
-            sr.reveal('[data-scroll-reveal="fade-up"]', { interval: 100 });
+            const desc = currentLang === 'es' && project.description_es ? project.description_es : project.description;
+            const title = currentLang === 'es' && project.title_es ? project.title_es : project.title;
 
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        loadGitHubCalendar();
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1 });
+            const modalContent = document.getElementById('modalContent');
+            modalContent.innerHTML = `
+                <h2 class="text-lg font-medium text-white mb-4">${title}</h2>
+                <p class="text-neutral-400 mb-4">${desc}</p>
+                <div class="space-y-3">
+                    ${project.plugins.map(p => {
+                        const pluginDesc = currentLang === 'es' ? p.desc_es : p.desc;
+                        return `
+                            <div class="border border-neutral-700 rounded p-3">
+                                <h3 class="text-sm font-medium text-white mb-1">${p.name}</h3>
+                                <p class="text-neutral-400 text-xs mb-2">${pluginDesc}</p>
+                                <a href="${p.url}" target="_blank" class="text-neutral-300 hover:text-white text-xs transition-colors">View on GitHub →</a>
+                            </div>
+                        `;
+                    }).join('')}
+                </div>
+            `;
+            document.getElementById('projectModal').classList.add('active');
+        }
 
-            const githubSection = document.querySelector('#github-widget');
-            if (githubSection) {
-                observer.observe(githubSection);
-            }
+        function closeModal() {
+            document.getElementById('projectModal').classList.remove('active');
+        }
+
+        document.getElementById('projectModal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
         });
 
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 100,
-                        behavior: 'smooth'
-                    });
-                }
-            });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeModal();
         });
     </script>
 </body>
