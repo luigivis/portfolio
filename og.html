@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>og</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1200px;height:630px;overflow:hidden}
+body{
+  background:#08090A;
+  color:#E2E4E7;
+  font-family:'IBM Plex Sans',sans-serif;
+  position:relative;
+}
+body::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(48rem 26rem at 14% -12%, rgba(226,228,231,.055), transparent 62%);
+}
+.frame{
+  position:relative;height:100%;
+  padding:62px 70px 56px;
+  display:flex;flex-direction:column;justify-content:space-between;
+}
+.top{display:flex;align-items:center;justify-content:space-between}
+.who{display:flex;align-items:center;gap:15px}
+.badge{
+  width:46px;height:46px;border-radius:50%;
+  border:1px solid #3E3E44;background:rgba(255,255,255,.07);
+  display:grid;place-items:center;
+  font-size:16px;font-weight:500;letter-spacing:.05em;color:#fff;
+}
+.name{font-size:24px;font-weight:500;letter-spacing:-.02em;color:#fff}
+.site{font-family:'IBM Plex Mono',monospace;font-size:14px;color:#7B8089;letter-spacing:.04em}
+.status{
+  display:flex;align-items:center;gap:10px;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:#7B8089;
+  margin-bottom:22px;
+}
+.dot{width:7px;height:7px;border-radius:50%;background:#89D196}
+h1{
+  font-size:78px;font-weight:600;line-height:1.0;letter-spacing:-.042em;color:#fff;
+  margin-bottom:26px;
+}
+.stack{display:flex;flex-wrap:wrap;gap:9px;max-width:900px}
+.chip{
+  font-family:'IBM Plex Mono',monospace;font-size:14px;color:#8A8F98;
+  border:1px solid #23252a;border-radius:6px;padding:6px 13px;
+  background:rgba(255,255,255,.018);
+}
+.mets{display:flex;gap:1px;border:1px solid #23252a;border-radius:11px;overflow:hidden;background:#23252a}
+.met{flex:1;background:#0e1013;padding:20px 24px}
+.mn{font-size:34px;font-weight:600;letter-spacing:-.04em;line-height:1;color:#fff}
+.ml{display:block;font-size:13.5px;color:#7B8089;margin-top:8px;line-height:1.35}
+</style></head>
+<body>
+<div class="frame">
+
+  <div class="top">
+    <div class="who">
+      <span class="badge">LV</span>
+      <span class="name">Luigi Vismara</span>
+    </div>
+    <span class="site">luigivis.com</span>
+  </div>
+
+  <div>
+    <p class="status"><span class="dot"></span>Nicaragua · Panama · Remote worldwide</p>
+    <h1>Senior Backend<br>Engineer</h1>
+    <div class="stack">
+      <span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">Kafka</span>
+      <span class="chip">AWS</span><span class="chip">Python</span><span class="chip">PostgreSQL</span>
+      <span class="chip">Spring AI</span><span class="chip">RAG</span><span class="chip">Vector DBs</span><span class="chip">MCP</span>
+    </div>
+  </div>
+
+  <div class="mets">
+    <div class="met"><span class="mn">6+</span><span class="ml">Years in production</span></div>
+    <div class="met"><span class="mn">40%</span><span class="ml">Lower cloud cost</span></div>
+    <div class="met"><span class="mn">60%</span><span class="ml">Faster data access</span></div>
+    <div class="met"><span class="mn">120ms</span><span class="ml">Latency cut</span></div>
+  </div>
+
+</div>
+</body></html>
